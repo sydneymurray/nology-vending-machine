@@ -11,7 +11,7 @@ public class MachineInService {
             DisplayProducts.displayProducts(machine);
             System.out.println("Please select a product: ");
             String selection = keyboardInput.nextLine();
-            BuyProduct.byProduct(String.valueOf(selection));
+            BuyProduct.buyProduct(Integer.parseInt(selection), machine);
         }
     }
 }
