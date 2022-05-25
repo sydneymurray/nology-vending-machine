@@ -1,16 +1,22 @@
 package org.example;
 
 public class Product {
+    private int id;
     private String name;
     private String category;
     private int quantity;
-    private float price;
+    private int price;
 
-    public Product(String name, String category, int quantity, float price) {
+    public Product(int id, String name, String category, int quantity, int price) {
+        this.id = id;
         this.name = name;
         this.category = category;
         this.quantity = quantity;
         this.price = price;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -25,7 +31,7 @@ public class Product {
         return quantity;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 
