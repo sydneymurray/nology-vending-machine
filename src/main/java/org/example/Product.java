@@ -35,7 +35,7 @@ public class Product {
         return price;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void soldItem() {
+        if(this.quantity > 0) this.quantity--;
     }
 }
