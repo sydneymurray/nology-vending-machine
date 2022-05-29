@@ -17,6 +17,6 @@ public class LoadUp {
         machine.add(new Product(11, "Pineapple", "Fruit Juice", randomIntQuantity.nextInt(21),  110));
         machine.add(new Product(12, "Salted Cashews", "Nuts", randomIntQuantity.nextInt(21),  140));
         machine.add(new Product(13, "Salted Peanuts", "Nuts", randomIntQuantity.nextInt(21),  130));
-        machine.add(new Product(14, "Dry Roasted Salted Peanuts", "Nuts", randomIntQuantity.nextInt(21),  130));
+        machine.add(new Product(14, "Dry Roasted Peanuts", "Nuts", randomIntQuantity.nextInt(21),  130));
     }
 }
