@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class LoadUp {
     static Random randomIntQuantity = new Random();
-    public static void loadUp(ArrayList<Product> machine){
+    public static void LoadUp(ArrayList<Product> machine){
         machine.add(new Product(1, "Nut", "Cereal Bar", randomIntQuantity.nextInt(21),  80));
         machine.add(new Product(2, "Mars", "Candy Bar", randomIntQuantity.nextInt(21),  70));
         machine.add(new Product(3, "Whole Nut", "Chocolate Bar", randomIntQuantity.nextInt(21),  60));
