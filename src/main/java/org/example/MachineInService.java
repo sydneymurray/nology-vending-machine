@@ -9,7 +9,7 @@ public class MachineInService {
 
         while (true) {
             DisplayProducts.displayProducts(machine);
-            System.out.println("\n  Please select a product: ");
+            System.out.println("\n     Please select a product: ");
             String selection = keyboardInput.nextLine();
             BuyProduct.buyProduct(Integer.parseInt(selection), machine);
         }

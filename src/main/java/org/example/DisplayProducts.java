@@ -3,9 +3,10 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class DisplayProducts {
-    public static void displayProducts(ArrayList<Product> machine){
+    public static void displayProducts(List<Product> machine){
         //machine.sort(Comparator.comparing(Product::getCategory));
         System.out.println("\n");
         for (Product product : machine) {

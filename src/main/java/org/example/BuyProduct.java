@@ -12,7 +12,10 @@ public class BuyProduct {
                 selectedProduct = item;
             }
         }
-        if(selectedProduct == null) return;
+        if(selectedProduct == null) {
+            System.out.println("Selection " + productID + " Does not exist");
+            return;
+        }
         if(selectedProduct.getQuantity() == 0) {
             System.out.println("Unfortunately, " + selectedProduct.getName() + " is SOLD OUT");
             return;

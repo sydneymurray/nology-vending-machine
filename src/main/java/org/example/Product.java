@@ -7,6 +7,16 @@ public class Product {
     private int quantity;
     private int price;
 
+    public int getQuantitySold() {
+        return quantitySold;
+    }
+
+    public void setQuantitySold(int quantitySold) {
+        this.quantitySold = quantitySold;
+    }
+
+    private int quantitySold = 0;
+
     public Product(int id, String name, String category, int quantity, int price) {
         this.id = id;
         this.name = name;
@@ -36,6 +46,9 @@ public class Product {
     }
 
     public void soldItem() {
-        if(this.quantity > 0) this.quantity--;
+        if(this.quantity > 0) {
+            this.quantity--;
+            this.quantitySold++;
+        }
     }
 }
