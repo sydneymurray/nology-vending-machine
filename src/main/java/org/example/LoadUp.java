@@ -1,4 +1,8 @@
 package org.example;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Random;
 import java.util.ArrayList;
 
@@ -18,5 +22,27 @@ public class LoadUp {
         machine.add(new Product(12, "Salted Cashews", "Nuts", randomIntQuantity.nextInt(21),  140));
         machine.add(new Product(13, "Salted Peanuts", "Nuts", randomIntQuantity.nextInt(21),  130));
         machine.add(new Product(14, "Dry Roasted Peanuts", "Nuts", randomIntQuantity.nextInt(21),  130));
+    }
+    public static void LoadUpFromDataFile(ArrayList<Product> machine){
+        String productFilePath = "./src/main/resources/ProductData.csv";
+        String dataLine = "";
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(productFilePath));
+            while(true){
+                dataLine = br.readLine();
+                if (dataLine == null) return;
+                String[] itemProperties = dataLine.split(",");
+                machine.add(new Product(Integer.parseInt(itemProperties[0]),
+                        itemProperties[1],
+                        itemProperties[2],
+                        randomIntQuantity.nextInt(21),
+                        Integer.parseInt(itemProperties[4])));
+            }
+        }
+        catch(FileNotFoundException e){
+            e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

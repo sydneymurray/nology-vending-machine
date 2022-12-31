@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "Nut",
+    "category": "Cereal Bar",
+    "quantity": 20,
+    "price": 80
+  },
+  {
+    "id": 2,
+    "name": "Mars",
+    "category": "Candy Bar",
+    "quantity": 20,
+    "price": 70
+  },
+  {
+    "id": 3,
+    "name": "Whole Nut",
+    "category": "Chocolate Bar",
+    "quantity": 20,
+    "price": 60
+  },
+  {
+    "id": 4,
+    "name": "Bacon Slices",
+    "category": "Crisp",
+    "quantity": 20,
+    "price": 50
+  },
+  {
+    "id": 5,
+    "name": "Salt & Vinegar",
+    "category": "Crisp",
+    "quantity": 20,
+    "price": 50
+  },
+  {
+    "id": 6,
+    "name": "Cheese & Onion",
+    "category": "Crisp",
+    "quantity": 20,
+    "price": 50
+  },
+  {
+    "id": 8,
+    "name": "Coke",
+    "category": "Soda",
+    "quantity": 20,
+    "price": 100
+  },
+  {
+    "id": 9,
+    "name": "Diet Coke",
+    "category": "Soda",
+    "quantity": 20,
+    "price": 100
+  },
+  {
+    "id": 10,
+    "name": "Orange",
+    "category": "Fruit Juice",
+    "quantity": 20,
+    "price": 110
+  },
+  {
+    "id": 11,
+    "name": "Pineapple",
+    "category": "Fruit Juice",
+    "quantity": 20,
+    "price": 110
+  },
+  {
+    "id": 12,
+    "name": "Salted Cashews",
+    "category": "Nuts",
+    "quantity": 20,
+    "price": 140
+  },
+  {
+    "id": 13,
+    "name": "Salted Peanuts",
+    "category": "Nuts",
+    "quantity": 20,
+    "price": 130
+  },
+  {
+    "id": 14,
+    "name": "Dry Roasted Peanuts",
+    "category": "Nuts",
+    "quantity": 20,
+    "price": 130
+  }
+]

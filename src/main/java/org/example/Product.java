@@ -6,6 +6,7 @@ public class Product {
     private String category;
     private int quantity;
     private int price;
+    private int quantitySold = 0;
 
     public int getQuantitySold() {
         return quantitySold;
@@ -14,8 +15,6 @@ public class Product {
     public void setQuantitySold(int quantitySold) {
         this.quantitySold = quantitySold;
     }
-
-    private int quantitySold = 0;
 
     public Product(int id, String name, String category, int quantity, int price) {
         this.id = id;
