@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.ArrayList;
 
+
 public class LoadUp {
     static Random randomIntQuantity = new Random();
     public static void LoadUp(ArrayList<Product> machine){
@@ -23,7 +24,7 @@ public class LoadUp {
         machine.add(new Product(13, "Salted Peanuts", "Nuts", randomIntQuantity.nextInt(21),  130));
         machine.add(new Product(14, "Dry Roasted Peanuts", "Nuts", randomIntQuantity.nextInt(21),  130));
     }
-    public static void LoadUpFromDataFile(ArrayList<Product> machine){
+    public static void LoadUpFromCSVDataFile(ArrayList<Product> machine){
         String productFilePath = "./src/main/resources/ProductData.csv";
         String dataLine = "";
         try {
