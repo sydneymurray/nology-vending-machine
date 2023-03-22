@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class LoadUp {
     static Random randomIntQuantity = new Random();
-    public static void LoadUp(ArrayList<Product> machine){
+    public static void loadUp(ArrayList<Product> machine){
         machine.add(new Product(1, "Nut", "Cereal Bar", randomIntQuantity.nextInt(21),  80));
         machine.add(new Product(2, "Mars", "Candy Bar", randomIntQuantity.nextInt(21),  70));
         machine.add(new Product(3, "Whole Nut", "Chocolate Bar", randomIntQuantity.nextInt(21),  60));
@@ -24,14 +24,12 @@ public class LoadUp {
         machine.add(new Product(13, "Salted Peanuts", "Nuts", randomIntQuantity.nextInt(21),  130));
         machine.add(new Product(14, "Dry Roasted Peanuts", "Nuts", randomIntQuantity.nextInt(21),  130));
     }
-    public static void LoadUpFromCSVDataFile(ArrayList<Product> machine){
+    public static void loadUpFromCSVDataFile(ArrayList<Product> machine){
         String productFilePath = "./src/main/resources/ProductData.csv";
-        String dataLine = "";
+        String dataLine;
         try {
-            BufferedReader br = new BufferedReader(new FileReader(productFilePath));
-            while(true){
-                dataLine = br.readLine();
-                if (dataLine == null) return;
+            BufferedReader fileReader = new BufferedReader(new FileReader(productFilePath));
+            while((dataLine = fileReader.readLine()) != null){
                 String[] itemProperties = dataLine.split(",");
                 machine.add(new Product(Integer.parseInt(itemProperties[0]),
                         itemProperties[1],
@@ -42,7 +40,8 @@ public class LoadUp {
         }
         catch(FileNotFoundException e){
             e.printStackTrace();
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
